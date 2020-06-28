@@ -105,20 +105,9 @@
 	ReloadDelayMultiplier@RANK-ELITE:
 		RequiresCondition: rank-elite
 		Modifier: 75
-	InaccuracyMultiplier@RANK-1:
-		RequiresCondition: rank-veteran == 1
-		Modifier: 90
-	InaccuracyMultiplier@RANK-2:
-		RequiresCondition: rank-veteran == 2
-		Modifier: 80
-	InaccuracyMultiplier@RANK-3:
-		RequiresCondition: rank-veteran == 3
-		Modifier: 70
-	InaccuracyMultiplier@RANK-ELITE:
-		RequiresCondition: rank-elite
-		Modifier: 50
 	SelfHealing@ELITE:
-		Step: 200
+		Step: 0
+		PercentageStep: 5
 		Delay: 100
 		HealIfBelow: 100
 		DamageCooldown: 125
@@ -379,7 +368,6 @@
 	RevealsShroud:
 		Range: 5c0
 	Mobile:
-		AlwaysTurnInPlace: true
 		Locomotor: foot
 	Selectable:
 		Bounds: 18,18,0,-6
